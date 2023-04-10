@@ -14,8 +14,9 @@ const {
     expect(get).toEqual(assert);
   });
 
+  //Test Case 2: Given that I have an empty list, when I add the first book to my list then I expect numberRead to return 1.
 
-  test("TestNumberRead",())=>{
+  test("TestNumberRead",()=>{
     //Arrange
     const Book = {
         title: "The Hobbite", author: "Mirza Ghalib", length: 250, year: 2000 
@@ -28,4 +29,4 @@ const {
     let get = numberRead();
     //Assert
     expect(get).toBe(assert);
-  }
+  });
