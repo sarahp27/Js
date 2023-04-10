@@ -35,14 +35,14 @@ const {
   test("TestNumberRead",()=>{
     //Arrange
     const Book = {
-        book1 : {title: "Gardener", author: "Raza", length: 50, year: 2023 }
-        book2 : { title: "Starting out with python", author: "Stephen", length: 500, year: 2022}
+        book1 : {title: "Gardener", author: "Raza", length: 50, year: 2023 },
+        book2 : { title: "Starting out with python", author: "Stephen", length: 500, year: 2022},
         book3 : { title: "JAVA", author: "Ali ", length: 1500, year: 2002}
     };
     addBook(Book, "10-10-2020", 2);
     addBook(Book, "05-3-2000", 5);
     addBook(Book, "02-08-2021", 4);
-    assert = 3;
+    assert = 4;
     //Act
     let get = numberRead();
     //Assert
