@@ -25,7 +25,7 @@ const {
     addBook(Book, ReadDate, Rating);
     assert = 1;
     //Act
-    let get = numberRead[];
+    let get = numberRead();
     //Assert
     expect(get).toBe(assert);
   }
