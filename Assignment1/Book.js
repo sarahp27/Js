@@ -15,6 +15,10 @@ numberRead=()=>{
     return Books.length;
 }
 
-deleteBook=(title)=>{
-
+removeBook=(title)=>{
+    Books.map(i => {
+        if (i.title === title){
+            return i.isRemoved = true;
+        }
+    })
 }
