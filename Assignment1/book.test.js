@@ -21,12 +21,32 @@ const {
     const Book = {
         title: "The Hobbite", author: "Mirza Ghalib", length: 250, year: 2000 
     };
-    const ReadDate = "20-10-2020" ;
-    const Rating = 4;
-    addBook(Book, ReadDate, Rating);
+    addBook(Book, "20-10-2002", 5);
     assert = 1;
     //Act
     let get = numberRead();
     //Assert
     expect(get).toBe(assert);
   });
+
+  //Test Case 3:Given that I have an empty list, 
+  //when I add additional books to the list I expect the numberRead to return the total number of books in my list.
+
+  test("TestNumberRead",()=>{
+    //Arrange
+    const Book = {
+        book1 : {title: "Gardener", author: "Raza", length: 50, year: 2023 }
+        book2 : { title: "Starting out with python", author: "Stephen", length: 500, year: 2022}
+        book3 : { title: "JAVA", author: "Ali ", length: 1500, year: 2002}
+    };
+    addBook(Book, "10-10-2020", 2);
+    addBook(Book, "05-3-2000", 5);
+    addBook(Book, "02-08-2021", 4);
+    assert = 3;
+    //Act
+    let get = numberRead();
+    //Assert
+    expect(get).toBe(assert);
+  });
+  
+
