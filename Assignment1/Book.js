@@ -5,6 +5,7 @@ let Books= new Array();
 
 exports.getBooks=()=> {
     return Books;
+
     // return BookList.filter(i=> {
     //     if (i.isRemoved!== true){   
     //         return Books;
@@ -23,10 +24,10 @@ numberRead=()=>{
     return Books.length;
 }
 
-removeBook=(title)=>{
+exports.removeBook=(title)=>{
     Books.map(i => {
         if (i.title === title){
             return i.isRemoved = true;
         }
     })
-}
+};
