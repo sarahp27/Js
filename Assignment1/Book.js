@@ -1,7 +1,15 @@
 let Books= new Array();
 
+
+// module.exports;
+
 exports.getBooks=()=> {
     return Books;
+    // return BookList.filter(i=> {
+    //     if (i.isRemoved!== true){   
+    //         return Books;
+    //     }
+    // })
 }
 
 
